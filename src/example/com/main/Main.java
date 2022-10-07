@@ -52,9 +52,19 @@ public class Main {
 //        System.out.println(c);
 //        System.out.println(i);
 //        System.out.println(str);
-        int i;
-        int[] array = new int[1];
-        System.out.println("array[0]の値" + array[0]);
-        
+//        int i;
+//        int[] array = new int[1];
+//        System.out.println("array[0]の値" + array[0]);
+//        int a = 10;
+//        int b = a;
+//        System.out.println("a: " + a + ", b:" + b);
+//        b = 50;
+//        System.out.println("a: " + a + ", b:" + b);
+        int[] a = new int[1];
+        int[] b = a;
+        a[0] = 10;
+        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
+        b[0] = 50;
+        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
     }
 }
