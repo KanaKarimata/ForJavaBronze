@@ -74,24 +74,29 @@ public class Main {
 //        System.out.println(str + a + b);
 //        System.out.println(str + (a + b));
 //        System.out.println(a + b + str);
-        int a =10;
-        int b = 10;
-        int c = 10;
-        int d = 10;
+//
+//        int a = 10;
+//        int b = 20;
+//        int c = 10;
+//        System.out.println("a == b:" + (a == b));
+//        System.out.println("a == c:" + (a == c));
+//        System.out.println("a != b:" + (a != b));
+//        System.out.println("a != c" + (a != c));
+//        System.out.println("a < b" + (a < b));
+//        System.out.println("a <= b" + (a <= b));
+//        System.out.println("a > b " + (a > b));
+//        System.out.println("a >= c" + (a >= c));
+        String str1 = null;
+        String str2 = "";
+        int[] array1 = null;
+        int[] array2 = new int[1];
+        int num = 0;
 
-        System.out.println(a++);
-        System.out.println(++b);
-        System.out.println(c--);
-        System.out.println(--d);
+        System.out.println(str1 == null);
+        System.out.println(str2 == null);
+        System.out.println(array1 != null);
+        System.out.println(array2 != null);
 
-        a = 10;
-        b = 10;
-        c = 10;
-        d = 10;
-        b = ++a;
-        System.out.println("a= " + a + " b= " + b);
-        d = c++;
-        System.out.println("c= " + c + " d = " + d);
 
     }
 }
