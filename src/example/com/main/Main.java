@@ -113,7 +113,17 @@ public class Main {
 //            default:
 //                System.out.println("defaultです");
 //        }
-        
+
+//        int num = 0;
+//        while(num < 5) {
+//            System.out.println("num: " + num);
+//            num ++;
+//        }
+//        int num = 0;
+//         do {
+//             System.out.println("num :" + num);
+//             num ++;
+//         } while(num < 5);
 
 
     }
