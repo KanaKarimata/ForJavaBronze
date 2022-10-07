@@ -30,10 +30,31 @@ public class Main {
 //        System.out.println("double: " + d);
 //        System.out.println("char: " + a);
 //        System.out.println("boolean:" + o);
-        String s1 = "tanaka";
-        int num = s1.length();
-        char c = s1.charAt(2);
-        System.out.println(num);
-        System.out.println(c);
+//        String s1 = "tanaka";
+//        int num = s1.length();
+//        char c = s1.charAt(2);
+//        System.out.println(num);
+//        System.out.println(c);
+
+//        char[] c;
+//        c = new char[3];
+//        int[] i = new int[3];
+//        String str[] = {"Welcome", "to", "Java"};
+//        c[0] = 'A';
+//        c[1] = 'B';
+//        c[2] = 'C';
+//        i[0] = 100;
+//        i[1] = 200;
+//        i[2] = 300;
+//        System.out.println("str[] のサイズ" + str.length);
+//        System.out.println("c[0] :" + c[0]);
+//        System.out.println("i[1] :" + i[1]);
+//        System.out.println(c);
+//        System.out.println(i);
+//        System.out.println(str);
+        int i;
+        int[] array = new int[1];
+        System.out.println("array[0]の値" + array[0]);
+        
     }
 }
