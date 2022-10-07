@@ -97,10 +97,23 @@ public class Main {
 //        System.out.println(array1 != null);
 //        System.out.println(array2 != null);
 
-        int num = 20;
-        String str = "numの値は";
-        str += num < 10 ? "10未満" : "10以上";
-        System.out.println(str);
+//        int num = 20;
+//        String str = "numの値は";
+//        str += num < 10 ? "10未満" : "10以上";
+//        System.out.println(str);
+
+//        int num = 2;
+//        switch(num) {
+//            case 1:
+//              System.out.println("numの値は１です");
+//              break;
+//            case 2:
+//                System.out.println("numのあたちは２です");
+//                break;
+//            default:
+//                System.out.println("defaultです");
+//        }
+        
 
 
     }
