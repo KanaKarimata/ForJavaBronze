@@ -124,7 +124,28 @@ public class Main {
 //             System.out.println("num :" + num);
 //             num ++;
 //         } while(num < 5);
+//        for(int count = 0; count < 5; count ++) {
+//            System.out.println("count = " + count);
+//        }
+//        int count1 = 0;
+//        for(; count1 < 5; count1++) {
+//            System.out.print(count1);
+//        }
+//
+//        System.out.println();
+//
+//        for(int count2 = 0; count2 < 5; ) {
+//            System.out.print(count2++);
+//        }
 
+//        char[] array = {'a', 'b', 'c', 'd', 'e'};
+//        for(char c: array) {
+//            System.out.print(c + "");
+//        }
+//        System.out.println();
+//        for(int count = 0; count < array.length; count++) {
+//            System.out.print(array[count] + "");
+//        }
 
     }
 }
