@@ -60,11 +60,38 @@ public class Main {
 //        System.out.println("a: " + a + ", b:" + b);
 //        b = 50;
 //        System.out.println("a: " + a + ", b:" + b);
-        int[] a = new int[1];
-        int[] b = a;
-        a[0] = 10;
-        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
-        b[0] = 50;
-        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
+//        int[] a = new int[1];
+//        int[] b = a;
+//        a[0] = 10;
+//        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
+//        b[0] = 50;
+//        System.out.println("a[0]:" + a[0] + " b[0]" + b[0]);
+//
+//        String str = "Hello";
+//        int a = 10;
+//        int b = 20;
+//        System.out.println(str + a);
+//        System.out.println(str + a + b);
+//        System.out.println(str + (a + b));
+//        System.out.println(a + b + str);
+        int a =10;
+        int b = 10;
+        int c = 10;
+        int d = 10;
+
+        System.out.println(a++);
+        System.out.println(++b);
+        System.out.println(c--);
+        System.out.println(--d);
+
+        a = 10;
+        b = 10;
+        c = 10;
+        d = 10;
+        b = ++a;
+        System.out.println("a= " + a + " b= " + b);
+        d = c++;
+        System.out.println("c= " + c + " d = " + d);
+
     }
 }
