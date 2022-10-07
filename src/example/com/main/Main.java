@@ -86,16 +86,21 @@ public class Main {
 //        System.out.println("a <= b" + (a <= b));
 //        System.out.println("a > b " + (a > b));
 //        System.out.println("a >= c" + (a >= c));
-        String str1 = null;
-        String str2 = "";
-        int[] array1 = null;
-        int[] array2 = new int[1];
-        int num = 0;
+//        String str1 = null;
+//        String str2 = "";
+//        int[] array1 = null;
+//        int[] array2 = new int[1];
+//        int num = 0;
+//
+//        System.out.println(str1 == null);
+//        System.out.println(str2 == null);
+//        System.out.println(array1 != null);
+//        System.out.println(array2 != null);
 
-        System.out.println(str1 == null);
-        System.out.println(str2 == null);
-        System.out.println(array1 != null);
-        System.out.println(array2 != null);
+        int num = 20;
+        String str = "numの値は";
+        str += num < 10 ? "10未満" : "10以上";
+        System.out.println(str);
 
 
     }
