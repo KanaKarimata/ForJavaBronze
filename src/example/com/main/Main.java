@@ -212,25 +212,73 @@ public class Main {
 ////            }
 //        }
 
+//        Employee a = new Employee();
+//        a.setId(100);
+//
+//        Employee b = new Employee();
+//        b.setId(200);
+
+//        System.out.println("Aさん" + a.getId());
+//        System.out.println("Bさん" + b.getId());
+
+//        Test t = new Test();
+//        t.myPrint();
+//        t.myPrint(100);
+//        t.myPrint(100, 200);
+//        t.myPrint("yamamoto");
+
         Employee a = new Employee();
-        a.setId(100);
-
-        Employee b = new Employee();
-        b.setId(200);
-
-        System.out.println("Aさん" + a.getId());
-        System.out.println("Bさん" + b.getId());
+        Employee b = new Employee("yamamoto");
+        Employee c = new Employee(100);
+        Employee d = new Employee(100, "yamamoto");
 
     }
 }
 
+//class Test {
+//    void myPrint(){
+//        System.out.println("myPrint()");
+//    }
+//
+//    void myPrint(int a) {
+//        System.out.println("myPrint(int a)");
+//    }
+//
+//    void myPrint(int a, int b) {
+//        System.out.println("myPrint(int a, int b)");
+//    }
+//
+//    void myPrint(String s) {
+//        System.out.println("myPrint(String s)");
+//    }
+//
+//}
+
 class Employee {
     int id;
-    void setId(int i) {
-        id = i;
+    String name;
+    Employee(){
+        System.out.println("Employee()");
     }
-
-    int getId() {
-        return id;
+    Employee(String name) {
+        System.out.println("Employee(String name)");
     }
+    Employee(int id){
+        System.out.println("Employee(int id)");
+    }
+    Employee(int id, String name){
+        System.out.println("Employee(int id, String name)");
+    }
+//    int id;
+//    void setId(int i) {
+//        id = i;
+//    }
+//
+//    int getId() {
+//        return id;
+//    }
+//
+//    Employee(int i) {
+//        this.id = i;
+//    }
 }
