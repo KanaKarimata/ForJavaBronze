@@ -147,5 +147,55 @@ public class Main {
 //            System.out.print(array[count] + "");
 //        }
 
+//        for(int i = 1; i < 10; i ++) {
+//            if ((i % 4) == 0) {
+//                System.out.println(i + "　は４の倍数");
+//            }
+//        }
+
+//        int num = 0;
+//        for (int i = 0; i < 5; i++ ) {
+//            switch (i % 2) {
+//                case 0:
+//                    num++;
+//                    break;
+//                case 1:
+//                    break;
+//            }
+//        }
+//        System.out.println("num: " + num);
+
+//        for(int i = 1; i < 10; i ++) {
+//            if ((i % 3) == 0) {
+//                System.out.println("処理をスキップします");
+//                continue;
+//            }
+//            System.out.println("i = " + i);
+//        }
+//        loop1:
+//        for (int x =0; x < 3; x++) {
+//            for(int y =0; y < 3; y++) {
+//                System.out.println("x = " + x + "y = " + y);
+//                if(x == 1 && y == 1) {
+//                    System.out.println("break文の実行");
+//                    break loop1;
+//                }
+//            }
+//        }
+//        System.out.println("-----------------------");
+//
+//        loop2:
+//        for(int x = 0; x < 3; x++) {
+//            for(int y = 0; y < 3; y++) {
+//                System.out.println("x = " + x + " : y = " + y);
+//                if (x == 1 && y ==1) {
+//                    System.out.println("continue文の実行");
+//                    continue loop2;
+//                }
+//            }
+//        }
+
+
+
     }
 }
