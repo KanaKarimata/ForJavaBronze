@@ -227,15 +227,58 @@ public class Main {
 //        t.myPrint(100, 200);
 //        t.myPrint("yamamoto");
 
-        Employee a = new Employee();
-        Employee b = new Employee("yamamoto");
-        Employee c = new Employee(100);
-        Employee d = new Employee(100, "yamamoto");
+//        Employee a = new Employee();
+//        Employee b = new Employee("yamamoto");
+//        Employee c = new Employee(100);
+//        Employee d = new Employee(100, "yamamoto");
+
+//        System.out.println(Test.staticVal);
+//        Test.methodB();
+//
+//        System.out.println("-----------------");
+//        Test t = new Test(); //非staticメンバは、必ずインスタンスしなければいけない
+//        System.out.println(t.instanceVal);
+//        System.out.println(t.staticVal);
+//        t.methodA();
+//        t.methodB();
+
+
+
+
 
     }
 }
 
-//class Test {
+class Test {
+
+    int instanceVal;
+    static int staticVal;
+
+    int methodA() {
+        return instanceVal;
+    }
+
+    int methodB(){
+        return staticVal;
+    }
+
+    static int methodD() {
+        return staticVal;
+    }
+
+    static int methodE() {
+        Test t = new Test();
+        return t.instanceVal;
+    }
+//    int instanceVal = 100;
+//    static int staticVal = 200;
+//    void methodA() {
+//        System.out.println("methodA():" + instanceVal);
+//    }
+//
+//    static void methodB(){
+//        System.out.println("methodB():" + staticVal);
+//    }
 //    void myPrint(){
 //        System.out.println("myPrint()");
 //    }
@@ -252,23 +295,23 @@ public class Main {
 //        System.out.println("myPrint(String s)");
 //    }
 //
-//}
+}
 
-class Employee {
-    int id;
-    String name;
-    Employee(){
-        System.out.println("Employee()");
-    }
-    Employee(String name) {
-        System.out.println("Employee(String name)");
-    }
-    Employee(int id){
-        System.out.println("Employee(int id)");
-    }
-    Employee(int id, String name){
-        System.out.println("Employee(int id, String name)");
-    }
+//class Employee {
+//    int id;
+//    String name;
+//    Employee(){
+//        System.out.println("Employee()");
+//    }
+//    Employee(String name) {
+//        System.out.println("Employee(String name)");
+//    }
+//    Employee(int id){
+//        System.out.println("Employee(int id)");
+//    }
+//    Employee(int id, String name){
+//        System.out.println("Employee(int id, String name)");
+//    }
 //    int id;
 //    void setId(int i) {
 //        id = i;
@@ -281,4 +324,4 @@ class Employee {
 //    Employee(int i) {
 //        this.id = i;
 //    }
-}
+//}
