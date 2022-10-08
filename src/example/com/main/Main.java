@@ -195,6 +195,23 @@ public class Main {
 //            }
 //        }
 
+//        for(int x = 0; x < 3; x++) {
+//            for(int y = 0; y < x; ++y)
+//                System.out.println("a");
+//            System.out.println("b");
+//
+//        }
+
+//        int a =0;
+//        boolean b = false;
+//        while((a++ < 3) && !b) {
+////            System.out.print("x ");
+//            System.out.print(a);
+////            if(a == 2) {
+////                System.out.print("y ");
+////            }
+//        }
+
 
 
     }
