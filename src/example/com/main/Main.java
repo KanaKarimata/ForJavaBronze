@@ -263,41 +263,62 @@ public class Main {
 //        Sub s = new Sub();
 //        s.methodB();
 
-        Sub s1 = new Sub();
-        Sub s2 = new Sub(10);
+//        Sub s1 = new Sub();
+//        Sub s2 = new Sub(10);
 
     }
 }
 
-class Foo {
-    String s;
-    int i;
-
-    public Foo() {
-        this("Hello");
-    }
-
-    public Foo(String s) {
-        this(s, 1);
-    }
-
-    public Foo(String s, int i) {
-        this.s = s;
-        this.i = i;
-        System.out.println("String: " + this.s);
-        System.out.println("int  :" + this.i);
-    }
+abstract class X {
+    protected abstract void methodA();
 }
 
-class Super {
-    public Super() {
-        System.out.println("Super()");
-    }
+abstract class Y extends X {}
 
-    public Super(int a) {
-        System.out.println("Super(int a)");
-    }
+class Z extends Y {
+    protected  void methodA(){}
+}
 
+abstract class Super{
+    protected abstract void methodA();
+    public void methodB(){}
+}
+
+class Sub extends Super {
+    protected void methodA(){} //実装（オーバーライド）必須
+    // public void methodA(){} これでもOK
+    public void methodB(){}
+}
+
+//class Foo {
+//    String s;
+//    int i;
+//
+//    public Foo() {
+//        this("Hello");
+//    }
+//
+//    public Foo(String s) {
+//        this(s, 1);
+//    }
+//
+//    public Foo(String s, int i) {
+//        this.s = s;
+//        this.i = i;
+//        System.out.println("String: " + this.s);
+//        System.out.println("int  :" + this.i);
+//    }
+//}
+
+//class Super {
+//    public Super() {
+//        System.out.println("Super()");
+//    }
+//
+//    public Super(int a) {
+//        System.out.println("Super(int a)");
+//    }
+//
 
 //    int num;
 //    public void methodA() {
@@ -311,17 +332,17 @@ class Super {
 //        System.out.println("Super print : " + s);
 //    }
 //    public void method() {}
-}
+//}
 
-class Sub extends Super{
-    public Sub() {
-        System.out.println("Sub()");
-    }
-
-    public Sub(int a) {
-        super(a);
-        System.out.println("Sub(int a)");
-    }
+//class Sub extends Super{
+//    public Sub() {
+//        System.out.println("Sub()");
+//    }
+//
+//    public Sub(int a) {
+//        super(a);
+//        System.out.println("Sub(int a)");
+//    }
 //    public void methodA() {
 //        num += 500;
 //    }
@@ -335,7 +356,7 @@ class Sub extends Super{
 //        s = "渡された文字列は" + s + "です";
 //        System.out.println("Sub print : " + s);
 //    }
-}
+//}
 
 //class Test {
 //
@@ -386,18 +407,18 @@ class Sub extends Super{
 
 //}
 
-class Sales extends Employee {
-    private String clientName = "SE";
-    public String getClientName() {
-       return clientName;
-    }
-}
+//class Sales extends Employee {
+//    private String clientName = "SE";
+//    public String getClientName() {
+//       return clientName;
+//    }
+//}
 
-class Employee {
-    private String id = "100";
-    public String getId() {
-        return id;
-    }
+//class Employee {
+//    private String id = "100";
+//    public String getId() {
+//        return id;
+//    }
 //    public Employee(int i) {
 //        id = 1;
 //    }
@@ -430,4 +451,4 @@ class Employee {
 //    Employee(int i) {
 //        this.id = i;
 //    }
-}
+//}
