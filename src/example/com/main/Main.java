@@ -241,35 +241,56 @@ public class Main {
 //        System.out.println(t.staticVal);
 //        t.methodA();
 //        t.methodB();
+//        Employee emp = new Employee(100);
+////        System.out.println("privateしてのインスタンス変数へのアクセス：" + emp.id);
+//        System.out.println("publicしてのメソッドへアクセス" + emp.getId());
 
-
-
-
+//        Sales s = new Sales();
+//        System.out.println("clientName: " + s.getClientName());
+//        System.out.println("id  :" + s.getId());
+        Super s1 = new Super();
+        s1.print("Java");
+        Sub s2 = new Sub();
+        s2.print("Java");
 
     }
 }
 
-class Test {
-
-    int instanceVal;
-    static int staticVal;
-
-    int methodA() {
-        return instanceVal;
+class Super {
+    public void print(String s) {
+        System.out.println("Super print : " + s);
     }
+    public void method() {}
+}
 
-    int methodB(){
-        return staticVal;
+class Sub extends Super{
+    public void print(String s) {
+        s = "渡された文字列は" + s + "です";
+        System.out.println("Sub print : " + s);
     }
+}
 
-    static int methodD() {
-        return staticVal;
-    }
-
-    static int methodE() {
-        Test t = new Test();
-        return t.instanceVal;
-    }
+//class Test {
+//
+//    int instanceVal;
+//    static int staticVal;
+//
+//    int methodA() {
+//        return instanceVal;
+//    }
+//
+//    int methodB(){
+//        return staticVal;
+//    }
+//
+//    static int methodD() {
+//        return staticVal;
+//    }
+//
+//    static int methodE() {
+//        Test t = new Test();
+//        return t.instanceVal;
+//    }
 //    int instanceVal = 100;
 //    static int staticVal = 200;
 //    void methodA() {
@@ -295,9 +316,27 @@ class Test {
 //        System.out.println("myPrint(String s)");
 //    }
 //
+
+//}
+
+class Sales extends Employee {
+    private String clientName = "SE";
+    public String getClientName() {
+       return clientName;
+    }
 }
 
-//class Employee {
+class Employee {
+    private String id = "100";
+    public String getId() {
+        return id;
+    }
+//    public Employee(int i) {
+//        id = 1;
+//    }
+//    public int getId() {
+//        return id;
+//    }
 //    int id;
 //    String name;
 //    Employee(){
@@ -324,4 +363,4 @@ class Test {
 //    Employee(int i) {
 //        this.id = i;
 //    }
-//}
+}
