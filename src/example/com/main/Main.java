@@ -266,39 +266,52 @@ public class Main {
 //        Sub s1 = new Sub();
 //        Sub s2 = new Sub(10);
 
-        MyClass c = new MyClass();
-        c.methodA();
-        c.methodB();
-        c.methodC();
+//        MyClass c = new MyClass();
+//        c.methodA();
+//        c.methodB();
+//        c.methodC();
 
+        double a = 10.5;
+        int c = (int)a;
+        System.out.println("c: " + c);
+
+        foo((short)c);
+
+
+
+
+    }
+    static void foo(short d) {
+        System.out.println("d: " + d);
     }
 }
 
-interface XIF { //interface
-    void methodA();
-}
 
-interface YIF { //interface
-    void methodB();
-}
+//interface XIF { //interface
+//    void methodA();
+//}
+//
+//interface YIF { //interface
+//    void methodB();
+//}
 
-interface SubIF extends XIF, YIF { //sub-interface
-    void methodC();
-}
+//interface SubIF extends XIF, YIF { //sub-interface
+//    void methodC();
+//}
 
-class MyClass implements SubIF { //implements class
-    public void methodA() {
-        System.out.println("methodA()");
-    }
-
-    public void methodB() {
-        System.out.println("methodB()");
-    }
-
-    public void methodC() {
-        System.out.println("methodC()");
-    }
-}
+//class MyClass implements SubIF { //implements class
+//    public void methodA() {
+//        System.out.println("methodA()");
+//    }
+//
+//    public void methodB() {
+//        System.out.println("methodB()");
+//    }
+//
+//    public void methodC() {
+//        System.out.println("methodC()");
+//    }
+//}
 
 //interface MyInterface {
 //    int b = 10;
