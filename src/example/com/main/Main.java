@@ -248,11 +248,38 @@ public class Main {
 //        Sales s = new Sales();
 //        System.out.println("clientName: " + s.getClientName());
 //        System.out.println("id  :" + s.getId());
-        Super s1 = new Super();
-        s1.print("Java");
-        Sub s2 = new Sub();
-        s2.print("Java");
+//        Super s1 = new Super();
+//        s1.print("Java");
+//        Sub s2 = new Sub();
+//        s2.print("Java");
 
+        System.out.println("Foo()の呼び出し---------------");
+        Foo f1 = new Foo();
+        System.out.println("Foo(\"Hey\")の呼び出し--------");
+        Foo f2 = new Foo("Hey");
+        System.out.println("Foo(\"Bye\", 200)の呼び出し--------");
+        Foo f3 = new Foo("Bye", 200);
+
+    }
+}
+
+class Foo {
+    String s;
+    int i;
+
+    public Foo() {
+        this("Hello");
+    }
+
+    public Foo(String s) {
+        this(s, 1);
+    }
+
+    public Foo(String s, int i) {
+        this.s = s;
+        this.i = i;
+        System.out.println("String: " + this.s);
+        System.out.println("int  :" + this.i);
     }
 }
 
