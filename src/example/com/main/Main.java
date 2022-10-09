@@ -253,12 +253,18 @@ public class Main {
 //        Sub s2 = new Sub();
 //        s2.print("Java");
 
-        System.out.println("Foo()の呼び出し---------------");
-        Foo f1 = new Foo();
-        System.out.println("Foo(\"Hey\")の呼び出し--------");
-        Foo f2 = new Foo("Hey");
-        System.out.println("Foo(\"Bye\", 200)の呼び出し--------");
-        Foo f3 = new Foo("Bye", 200);
+//        System.out.println("Foo()の呼び出し---------------");
+//        Foo f1 = new Foo();
+//        System.out.println("Foo(\"Hey\")の呼び出し--------");
+//        Foo f2 = new Foo("Hey");
+//        System.out.println("Foo(\"Bye\", 200)の呼び出し--------");
+//        Foo f3 = new Foo("Bye", 200);
+
+//        Sub s = new Sub();
+//        s.methodB();
+
+        Sub s1 = new Sub();
+        Sub s2 = new Sub(10);
 
     }
 }
@@ -284,17 +290,51 @@ class Foo {
 }
 
 class Super {
-    public void print(String s) {
-        System.out.println("Super print : " + s);
+    public Super() {
+        System.out.println("Super()");
     }
-    public void method() {}
+
+    public Super(int a) {
+        System.out.println("Super(int a)");
+    }
+
+
+//    int num;
+//    public void methodA() {
+//        num += 100;
+//    }
+//
+//    public void print() {
+//        System.out.println("num値 :" + num);
+//    }
+//    public void print(String s) {
+//        System.out.println("Super print : " + s);
+//    }
+//    public void method() {}
 }
 
 class Sub extends Super{
-    public void print(String s) {
-        s = "渡された文字列は" + s + "です";
-        System.out.println("Sub print : " + s);
+    public Sub() {
+        System.out.println("Sub()");
     }
+
+    public Sub(int a) {
+        super(a);
+        System.out.println("Sub(int a)");
+    }
+//    public void methodA() {
+//        num += 500;
+//    }
+//    public void methodB() {
+//        methodA();
+//        print();
+//        super.methodA();
+//        print();
+//    }
+//    public void print(String s) {
+//        s = "渡された文字列は" + s + "です";
+//        System.out.println("Sub print : " + s);
+//    }
 }
 
 //class Test {
