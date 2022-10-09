@@ -266,26 +266,57 @@ public class Main {
 //        Sub s1 = new Sub();
 //        Sub s2 = new Sub(10);
 
+        MyClass c = new MyClass();
+        c.methodA();
+        c.methodB();
+        c.methodC();
+
     }
 }
 
-interface MyInterface {
-    int b = 10;
-    final int c = 20;
-    public int d = 30;
-    static int e = 40;
-    public final int f = 50;
+interface XIF { //interface
+    void methodA();
+}
 
-    public abstract void methodA();
-    abstract void methodB();
+interface YIF { //interface
+    void methodB();
+}
+
+interface SubIF extends XIF, YIF { //sub-interface
     void methodC();
 }
 
-class MyClass implements MyInterface {
-    public void methodA(){}
-    public void methodB(){}
-    public void methodC(){}
+class MyClass implements SubIF { //implements class
+    public void methodA() {
+        System.out.println("methodA()");
+    }
+
+    public void methodB() {
+        System.out.println("methodB()");
+    }
+
+    public void methodC() {
+        System.out.println("methodC()");
+    }
 }
+
+//interface MyInterface {
+//    int b = 10;
+//    final int c = 20;
+//    public int d = 30;
+//    static int e = 40;
+//    public final int f = 50;
+//
+//    public abstract void methodA();
+//    abstract void methodB();
+//    void methodC();
+//}
+//
+//class MyClass implements MyInterface {
+//    public void methodA(){}
+//    public void methodB(){}
+//    public void methodC(){}
+//}
 
 //abstract class X {
 //    protected abstract void methodA();
