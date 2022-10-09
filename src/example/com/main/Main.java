@@ -271,18 +271,35 @@ public class Main {
 //        c.methodB();
 //        c.methodC();
 
-        double a = 10.5;
-        int c = (int)a;
-        System.out.println("c: " + c);
-
-        foo((short)c);
-
-
-
+//        double a = 10.5;
+//        int c = (int)a;
+//        System.out.println("c: " + c);
+//
+//        foo((short)c);
+       Foo f = new MyClass(); // スーパークラスの変数にサブクラスのオブジェクトを代入
+       f.method(10, 20); // スーパークラスのメソッド呼び出し
+       f.print(); //サブクラスのメソッド呼び出し
 
     }
-    static void foo(short d) {
-        System.out.println("d: " + d);
+//    static void foo(short d) {
+//        System.out.println("d: " + d);
+//    }
+}
+
+abstract class Foo {
+    int x;
+    int y;
+
+    public abstract void print();
+    public void method(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+class MyClass extends Foo {
+    public void print() {
+        System.out.println("x: " + x + " y: " + y);
     }
 }
 
