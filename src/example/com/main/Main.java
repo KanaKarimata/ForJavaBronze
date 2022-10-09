@@ -269,26 +269,44 @@ public class Main {
     }
 }
 
-abstract class X {
-    protected abstract void methodA();
+interface MyInterface {
+    int b = 10;
+    final int c = 20;
+    public int d = 30;
+    static int e = 40;
+    public final int f = 50;
+
+    public abstract void methodA();
+    abstract void methodB();
+    void methodC();
 }
 
-abstract class Y extends X {}
-
-class Z extends Y {
-    protected  void methodA(){}
-}
-
-abstract class Super{
-    protected abstract void methodA();
+class MyClass implements MyInterface {
+    public void methodA(){}
     public void methodB(){}
+    public void methodC(){}
 }
 
-class Sub extends Super {
-    protected void methodA(){} //実装（オーバーライド）必須
-    // public void methodA(){} これでもOK
-    public void methodB(){}
-}
+//abstract class X {
+//    protected abstract void methodA();
+//}
+//
+//abstract class Y extends X {}
+//
+//class Z extends Y {
+//    protected  void methodA(){}
+//}
+
+//abstract class Super{
+//    protected abstract void methodA();
+//    public void methodB(){}
+//}
+
+//class Sub extends Super {
+//    protected void methodA(){} //実装（オーバーライド）必須
+//    // public void methodA(){} これでもOK
+//    public void methodB(){}
+//}
 
 //class Foo {
 //    String s;
